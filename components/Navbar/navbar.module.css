@@ -3,9 +3,9 @@
   justify-content: space-between;
   align-items: center;
 
-  background: rgba(255, 248, 240, 0.95); /* parchment overlay */
+  background: rgba(255, 248, 240, 0.95);
   padding: 1rem 2rem;
-  border-bottom: 2px solid #d4b483; /* warm gold-brown border */
+  border-bottom: 2px solid #d4b483;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 
   position: sticky;
@@ -14,10 +14,11 @@
 }
 
 .navTitle {
+  margin-left: 3rem;
   font-family: "Georgia", serif;
   font-size: 1.75rem;
   font-weight: bold;
-  color: #3b2f2f; /* deep brown */
+  color: #3b2f2f;
   letter-spacing: 1px;
 }
 
@@ -37,7 +38,7 @@
 
 .profile a {
   padding: 0.5rem 1rem;
-  background: #8b5e3c; /* cozy wood brown */
+  background: #8b5e3c;
   color: white;
   border-radius: 6px;
   font-size: 0.9rem;

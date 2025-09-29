@@ -53,3 +53,24 @@
 .sidebar a:hover {
   color: #5c4033; 
 }
+
+
+
+
+
+.sidebar.open {
+  left: 0; 
+}
+
+.toggleBtn {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  background: #5c4033;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  z-index: 1001;
+}
