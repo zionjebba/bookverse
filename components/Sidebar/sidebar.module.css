@@ -1,12 +1,12 @@
 .sidebar {
   width: 220px;
-  background-color: #fdf6ec; /* warm parchment tone */
-  color: #3b2b2b; /* deep brown text */
+  background-color: #fdf6ec;
+  color: #3b2b2b;
   min-height: 100vh;
   padding: 1.5rem 1rem;
-  border-right: 2px solid #d6bfa7; /* warm border like old wood */
+  border-right: 2px solid #d6bfa7;
   transition: transform 0.3s ease-in-out;
-  font-family: "Merriweather", serif; /* bookish font */
+  font-family: "Merriweather", serif;
 }
 
 .sidebar a {
@@ -30,26 +30,26 @@
 }
 
 .sidebarItem:hover {
-  background: #e8d8c3; /* soft paper hover */
-  color: #5c4033; /* rich brown */
+  background: #e8d8c3; 
+  color: #5c4033; 
   padding-left: 1.5rem;
 }
 
 .active {
-  background: #bba68f; /* darker parchment for active state */
+  background: #bba68f; 
   color: #2c1e1e;
   font-weight: 700;
-  width:100%;
+  width: 100%;
   border-radius: 4px;
   padding: 5px 10px;
 }
 
 .sidebar a:link,
 .sidebar a:visited {
-  color: inherit; /* keep same color as normal */
+  color: inherit; 
 }
 
 .sidebar a:active,
 .sidebar a:hover {
-  color: #5c4033; /* cozy brown on hover/active */
+  color: #5c4033; 
 }

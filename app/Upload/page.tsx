@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import UploadedBooksList from "../../components/UploadedBookList/uploadedBookList";
 import styles from "./upload.module.css";
-import Sidebar from "@/components/Sidebar/Sidebar";
+import Sidebar from "@/components/sidebar/sidebar";
 
 export default function UploadBookPage() {
   const [uploadedBooks, setUploadedBooks] = useState<any[]>([]);

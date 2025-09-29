@@ -3,10 +3,10 @@ import React, { useState } from "react";
 import styles from "./books.module.css";
 import Link from "next/link";
 import books from "../../components/lib/mockData";
-import BookCard from "../../components/BookCard/BookCard";
+import BookCard from "../../components/bookcard/BookCard";
 import { Book } from "../../components/lib/types";
-import Navbar from "../../components/Navbar/Navbar";
-import Sidebar from "../../components/Sidebar/Sidebar";
+import Navbar from "../../components/navbar/navbar";
+import Sidebar from "../../components/sidebar/sidebar";
 
 function Books() {
   const [showSidebar, setShowSidebar] = useState(true);

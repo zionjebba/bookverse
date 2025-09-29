@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import AuthForm from "../../../components/AuthForm/authForm";
+import AuthForm from "../../../components/authform/authForm";
 
 export default function SignInPage() {
   const handleSignIn = (data: { username?: string; password: string }) => {

@@ -2,9 +2,9 @@
 import React from "react";
 import Link from "next/link";
 import styles from "./page.module.css";
-import Carousel from "@/components/Carousel/Carousel";
+import Carousel from "@/components/carousel/carousel";
 import Image from "next/image";
-import Navbar from "@/components/Navbar/Navbar";
+import Navbar from "@/components/navbar/navbar";
 
 export default function LandingPage() {
 return (

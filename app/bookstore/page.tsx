@@ -4,8 +4,8 @@
 import React, { useState, useEffect, useRef } from "react";
 import styles from "./bookstore.module.css";
 import Link from "next/link";
-import Sidebar from "@/components/Sidebar/Sidebar";
-import Navbar from "@/components/Navbar/Navbar";
+import Sidebar from "@/components/sidebar/sidebar";
+import Navbar from "@/components/navbar/navbar";
 
 interface Author {
   name: string;
