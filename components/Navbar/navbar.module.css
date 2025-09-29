@@ -1,0 +1,52 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background: rgba(255, 248, 240, 0.95); /* parchment overlay */
+  padding: 1rem 2rem;
+  border-bottom: 2px solid #d4b483; /* warm gold-brown border */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navTitle {
+  font-family: "Georgia", serif;
+  font-size: 1.75rem;
+  font-weight: bold;
+  color: #3b2f2f; /* deep brown */
+  letter-spacing: 1px;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-family: "Georgia", serif;
+  color: #5a4646;
+}
+
+.profile h1 {
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+.profile a {
+  padding: 0.5rem 1rem;
+  background: #8b5e3c; /* cozy wood brown */
+  color: white;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.profile a:hover {
+  background: #6f472b;
+  transform: translateY(-2px);
+}

@@ -1,0 +1,55 @@
+.sidebar {
+  width: 220px;
+  background-color: #fdf6ec; /* warm parchment tone */
+  color: #3b2b2b; /* deep brown text */
+  min-height: 100vh;
+  padding: 1.5rem 1rem;
+  border-right: 2px solid #d6bfa7; /* warm border like old wood */
+  transition: transform 0.3s ease-in-out;
+  font-family: "Merriweather", serif; /* bookish font */
+}
+
+.sidebar a {
+  text-decoration: none;
+}
+
+.sidebarList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebarItem {
+  padding: 0.8rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #3b2b2b;
+  transition: background 0.2s ease, padding-left 0.2s ease;
+}
+
+.sidebarItem:hover {
+  background: #e8d8c3; /* soft paper hover */
+  color: #5c4033; /* rich brown */
+  padding-left: 1.5rem;
+}
+
+.active {
+  background: #bba68f; /* darker parchment for active state */
+  color: #2c1e1e;
+  font-weight: 700;
+  width:100%;
+  border-radius: 4px;
+  padding: 5px 10px;
+}
+
+.sidebar a:link,
+.sidebar a:visited {
+  color: inherit; /* keep same color as normal */
+}
+
+.sidebar a:active,
+.sidebar a:hover {
+  color: #5c4033; /* cozy brown on hover/active */
+}

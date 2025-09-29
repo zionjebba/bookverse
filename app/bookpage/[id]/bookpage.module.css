@@ -1,0 +1,93 @@
+.pages {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 2rem;
+  padding: 2rem;
+  min-height: 100vh;
+}
+
+.leftPage,
+.rightPage {
+  width: 40%;
+  height: 90vh;
+  padding: 2rem;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+
+  font-family: "Georgia", serif;
+  font-size: 1rem;
+  line-height: 1.8;
+
+  overflow-y: auto;
+  border-radius: 6px;
+}
+
+.leftPage {
+  border-right: 2px solid #e0d7c6;
+}
+
+.rightPage {
+  border-left: 2px solid #e0d7c6;
+}
+
+.prevBtn,
+.nextBtn {
+  background: #2c2c2c;
+  color: #fff;
+  padding: 0.7rem 1.2rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 1rem;
+  font-family: inherit;
+  font-size: 0.95rem;
+  transition: background 0.25s ease;
+}
+
+.prevBtn:hover,
+.nextBtn:hover {
+  background: #555;
+}
+
+/* Dark mode */
+body.dark .pages {
+  background-color: #1a1a1a;
+  color: #faf9f6;
+}
+
+body.dark .leftPage,
+body.dark .rightPage {
+  background: #222;
+  color: #f5f5f5;
+  border-color: #444;
+}
+
+@media (max-width: 900px) {
+  .pages {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .leftPage,
+  .rightPage {
+    width: 90%;
+    height: auto;
+    min-height: 70vh;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+  }
+
+  .leftPage {
+    border-right: none;
+    border-bottom: none;
+  }
+
+  .rightPage {
+    border-left: 1px solid #ddd;
+
+    border-top: none;
+  }
+}
