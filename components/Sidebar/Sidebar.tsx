@@ -18,7 +18,6 @@ function Sidebar() {
 
   return (
     <>
-      {/* Toggle button */}
       <button
         className={styles.toggleBtn}
         onClick={() => setIsOpen((prev) => !prev)}
@@ -26,7 +25,6 @@ function Sidebar() {
         =
       </button>
 
-      {/* Sidebar */}
       <aside className={`${styles.sidebar} ${isOpen ? styles.open : ""}`}>
         <ul className={styles.sidebarList}>
           {sidebarList.map((item, index) => {
