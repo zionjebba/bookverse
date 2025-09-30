@@ -4,7 +4,6 @@
   margin: 0;
 }
 
-
 body.dark {
   background: #121212;
   color: white;
@@ -20,9 +19,6 @@ body.dark .pages {
   color: #ddd;
 }
 
-.layout{
+.layout {
   display: flex;
 }
-
-
-

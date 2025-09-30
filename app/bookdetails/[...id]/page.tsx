@@ -1,17 +1,17 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import React, { useState, use,  useEffect } from "react";
 import styles from "./bookdetails.module.css";
-import CommentsSection from "@/components/CommentsSection/CommentsSection";
+import CommentsSection from "@/components/commentssection/commentssection";
 import Link from "next/link";
 
 interface BookDetailsPageProps {
-  params: {
-    id: string[];
-  };
+  params: Promise< {id: string[]}>;
+  
 }
 
 export default function BookDetailsPage({ params }: BookDetailsPageProps) {
-  const bookKey = params.id.join("/");
+  const {id} = use(params);
+ const bookKey = id.join("/");
   const apiUrl = `https://openlibrary.org/${bookKey}.json`;
 
   const [book, setBook] = useState<any>(null);
@@ -42,7 +42,7 @@ export default function BookDetailsPage({ params }: BookDetailsPageProps) {
   return (
     <>
       <div className={styles.topBar}>
-        <Link href="/bookstore" >
+        <Link href="/bookstore">
           <button className={styles.backBtn}>← Back</button>
         </Link>
         <button className={styles.saveBtn} onClick={toggleSaveBtn}>
